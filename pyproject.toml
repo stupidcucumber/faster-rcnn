@@ -1,0 +1,27 @@
+[project]
+name = "faster-rcnn"
+version = "0.0.1"
+authors = [
+    {name="Ihor Kostiuk", email="ihor.kostiuk@knu.ua"}
+]
+description = "PyTorch implementation of Faster-RCNN."
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+]
+
+[tool.flake8]
+max-line-length=88
+exclude = [
+    ".git",
+    "__pycache__"
+]
+extend-ignore = [
+    "E203",
+]
+per-file-ignores = """
+    __init__.py: F401
+"""
